@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #about {
+        display : flex;
+        align-items: flex-start;
+        gap: 20px;
+        marin-top: 20px;
+      }
+      #about img {
+        width: 250px;
+        border-radius: 10px;
+      }
+      about .about-text{
+        max-width: 600px;
+        text-align: justify;
+      }
+      @media(max-width: 768px){
+        #about{
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f7f7fa;
+            margin: 0;
+        }
+        header {
+            background: #3e4e83;
+            color: #fff;
+            text-align: center;
+            padding: 30px 10px;
+        }
+        nav {
+            background: #2c3452;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 40px auto;
+            gap: 20px;
+        }
+        .main, .sidebar {
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+        }
+        .main {
+            flex: 3;
+            min-width: 340px;
+        }
+        .sidebar {
+            flex: 1;
+            min-width: 260px;
+        }
+        section {
+            margin-bottom: 44px;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            color: #3e4e83;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .card {
+            background: #f3f6fb;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 16px;
+            flex: 1;
+            min-width: 220px;
+            max-width: 320px;
+        }
+        .card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        /* Chatbot window styling */
+        .chatbot {
+            margin-top: 32px;
+            background: #eef1f6;
+            border-radius: 10px;
+            padding: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        }
+        /* Responsive */
+        @media (max-width: 900px) {
+            .container { flex-direction: column; }
+            .main, .sidebar { min-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My World</h1>
+        <p>Hi, I'm Karthik. Here you'll find my story, passion, and journeys!</p>
+    </header>
+    <nav>
+        <a href="#about">About Myself</a>
+        <a href="#chat">Fun Facts</a>
+        <a href="#projects">My Projects</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#travel">My Travel & Trips</a>
+    </nav>
+    <div class="container">
+        <div class="main">
+          <h2>About Myself</h2>
+            <section id="about">
+                <img src="karthik.jpeg" alt="Profile photo"/>
+            <div class="cards">
+                <p align="justify">
+Hello! My name is Karthik Rathesh Nair, though everyone lovingly calls me Karthi. I'm a Sixth Standard student at Al Noor International School in Bahrain.<br> <br>
+I get really excited about making tiny, working models from everyday things.My favorite projects often start when I reuse parts from my old toys or recycled materials like cardboard, ice cream sticks, and bottles. The most fun part?. Figuring out how to take these bits and pieces and build something new—sometimes it’s a mini vehicle, sometimes a moving gadget. I also enjoy shaping tiny models with clay, turning my ideas into creative, little sculptures. A few of these clay models are even showcased here!<br><br>
+Beyond crafts, I am very passionate about computers and coding. I love how coding lets you build applications and solve problems in totally new ways. I’m planning to spend more time learning programming, making apps, and exploring the world of technology. Luckily, my parents and friends encourage me a lot in these hobbies. One special person who inspires me is our Minnu Aunty, who is always ready to help me learn even more about coding and computers.<br><br>
+Whether I’m building a clay model, inventing something with recycled stuff, or writing a new piece of code, I believe creativity and curiosity make every day something to look forward to!</p>
+            </section>
+            <section id="chat" class="chatbot">
+                <h2>Techno Fest : Meet My Fun Fact Chatbot</h2>
+
+                   <iframe
+                    allow="microphone;"
+                    width="350"
+                    height="430"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/80b8bb63-3c56-4bc1-963b-f1e6052c39f0">
+                    </iframe>
+
+                <a href="https://console.dialogflow.com/api-client/demo/embedded/80b8bb63-3c56-4bc1-963b-f1e6052c39f0">In Full Window</a>
+                <p>Click "Mr.Beta" to chat with my intelligent assistant for fun facts!</p>
+            </section>
+            <section id="projects">
+                <h2>My Projects</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Project One: Game(Running Horse)</h3>
+                        <a href="project.html">Running Horse</a>
+                        <p>A tiny Game devoloped in SCRATCH, which helps to devolop Concentration</p>
+                    </div>
+                    <div class="card">
+                        <h3>Project Two: Chat bot using DIALOGFLOW</h3>
+                        <a href="https://console.dialogflow.com/api-client/demo/embedded/5715c9ab-1646-40e5-a73d-793dd6e0da87">Mr.Fun</a>
+                        <p>A Bot devoloped in DIALOGFLOW for giving knowledgable Fun Facts, whch  can entertain you</p>
+                    </div>
+                    <div class="card">
+                        <h3>Project Three: Chat bot using SCRATCH</h3>
+                        <a href="Scratch Bot.html">Mr.student</a>
+                        <p>A Bot devoloped in SCRATCH, which you can earn a feel to be a teacher , and can entertain you</p>
+                    </div>
+                </div>
+            </section>
+            <section id="hobbies">
+                <h2>My Hobbies</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="Clay.jpeg" alt="Clay Modeling"/>
+                        <h3>Clay Modeling</h3>
+                        <p>I love creating tiny and imaginative models using clay, turning my ideas into fun little sculptures.</p>
+                    </div>
+                    <div class="card">
+                        <img src="Drawing - 1.jpeg" alt="Hobby 2"/>
+                        <h3>Drawing</h3>
+                        <p>I enjoy drawing because it lets me express my ideas and imagination on paper through colors and shapes.</p>
+                    </div>
+                    <div class="card">
+                        <img src="Craft - 1.jpeg" alt="Crafting"/>
+                        <h3>Crafting</h3>
+                        <p>I love crafting because it allows me to make creative things by reusing everyday materials and turning simple items into something special.</p>
+                    </div>
+
+                </div>
+            </section>
+            <section id="travel">
+                <h2>My Travel & Trips</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="240_F_407587142_JgELfjXR6ktMzvjgWiDES0qtjRzAZzYj.jpg" alt="Adiyogi"/>
+                        <h3>(Adiyogi)Coimbatore, India</h3>
+                         <p align="justify">
+                        In the evening of July 20th, 2024, the climate at Adi Yogi Ashram in Coimbatore was pleasantly cool and refreshing due to the monsoon season. Temperatures ranged from about 23–32°C, with humidity bringing a fresh feel to the surroundings and lush greenery everywhere, making it comfortable to stroll with family. Occasional gentle drizzles added to the serene vibe. <details>
+                        <summary>Read More</summary>
+                        <p align="justify">
+
+                        Traveling to the ashram was a smooth journey, with scenic views of the Western Ghats along the way. On arrival, the family explored the well-maintained campus, stopping at the souvenir shops to purchase only small gifts and souvenirs for relatives—choosing items like miniature Adiyogi statues, spiritually-themed keychains, and handcrafted keepsakes that captured the memory of the visit.<br><br>
+
+                        As dusk settled, the family gathered with other visitors to witness the famous "Divya Darshanam" laser and sound show. Starting around 7 PM, the show was a spectacular audio-visual experience, projecting vibrant lights onto the giant Adi Yogi statue and telling the story of Lord Shiva as the first yogi. The spiritual narration, immersive visuals, and collective energy of the crowd created an unforgettable moment.<br><br>
+
+                        Post show, the evening tea under shaded gazebos, overlooking the illuminated statue against the night sky, made for cozy family conversations and laughter. The trip ended on a joyful note, filled with shared memories and a sense of spiritual fulfillment, returning home with hearts full and hands loaded with meaningful keepsakes for loved ones.</p>
+                        </details>
+
+                        <p></p>
+                    </div>
+                    <div class="card">
+                        <img src="ksrtc-750x422-1.jpg" alt="Kerala"/>
+                        <h3>Sahyam Muthal Sagaram Varae..</h3>
+                        <p align="justify">
+
+                        I had the wonderful opportunity to participate in the three-day camp organized by the Kerala Malayalam Mission, titled "Sahyam Muthal Sagaram Varae" at Kattakada. This unique experience was designed to help students like me, especially those with roots outside Kerala, connect deeply with the state’s diverse culture and vibrant natural beauty.<details> 
+                        <summary>Read More</summary>
+                        <p align="justify">
+
+                        From the very first day, I was excited to meet other participants, including children of Malayalis from around the world. Together, we embarked on a journey tracing the flow of the Neyyar River—from the forested highlands of Kottoor, through bustling villages and green paddy fields, all the way to the Arabian Sea at Poovar. Each leg of the trip was an eye-opener. I got to try rice planting in the muddy fields of Poozhanad, visited local historical sites, and listened to inspiring talks from community leaders and culture experts. These activities taught me about Kerala’s traditional ways of life and the unity found in its villages.<br><br>
+
+                        During the evenings, our group gathered for cultural programs, shared our experiences by the campfire, and reflected on what we had learned. The laughter, stories, and team spirit made each day special. The final day was unforgettable, as we explored the coastal region, learned about fishing traditions, and ended our journey at the lively Kovalam Arts and Crafts Village.?<br><br>
+
+                        Participating in this camp not only improved my Malayalam language skills but also gave me a newfound appreciation for Kerala’s land and people. It was a memorable trip that strengthened my connection to my heritage and left me with many new friends and wonderful memories.</p>
+                        </details>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="Sabarimala.jpg" alt="Sabarimala"/>
+                        <h3>Sabarimala</h3>
+                        <p align="justify">
+                        On December 20th, 2024, I embarked on a deeply spiritual and unforgettable pilgrimage to Sabarimala, starting from the Neyyattinkara Vadakode Sastha Temple. Accompanied by my father and brother, we boarded a KSRTC bus early in the day, joining other devotees on their way to seek the blessings of Lord Ayyappa.
+                        <details>
+                        <summary>Read More</summary>
+                        <p align="justify">
+                        The journey itself was filled with anticipation and devotion, as we passed through scenic stretches and vibrant towns, experiencing the energy of countless pilgrims traveling together. After reaching Sabarimala, we checked into a Devasom room arranged for our stay, grateful for a place to rest and prepare for the sacred experiences ahead.<br><br>
+
+                        That night, as fatigue overtook me, the soul-stirring tune of "Harivarasanam" echoed throughout the temple complex. Even while I drifted into sleep, the devotional song seemed to fill the air, reaching me, and at one point I awoke suddenly, captivated by its haunting beauty and spiritual depth. The music, devotion, and atmosphere enveloped me completely, making the experience truly moving.<br><br>
+
+                        Early the next morning, after a refreshing wake-up and cleansing rituals, we joined the throngs of devotees for darshan. Standing before Lord Ayyappa with my father and brother by my side, I felt an overwhelming wave of emotion—gratitude, peace, and awe. The connection to the divine, shared with my family, left a lasting mark on my heart.<br><br>
+
+                        After completing the darshan, we began our trek back—walking a portion of the way and then taking the KSRTC bus to return home. The pilgrimage, the rituals, the poignant music of Harivarasanam, and the bond with my family came together to make this a truly mind-blowing and emotional experience. Even now, I feel a strong longing to visit Sabarimala again, to relive the spiritual magic and devotion that touched my soul on that journey.
+                    </details>
+                    </div> 
+                </div>
+            </section>
+            </section>
+</body>
+</html>
+
